@@ -36,6 +36,7 @@ class TicTacToe is InputNotify
         let d: Array[U8 val] val = consume data
         try
             if d(0)? == 10 then
+                _env.out.print("")
                 if _buffer.size() > 2 then
                     _env.out.print("too long input. Please retry")
                     _buffer.clear()
@@ -78,6 +79,7 @@ class TicTacToe is InputNotify
                 for m in d.values() do
                     _buffer.push(m)
                 end
+                _env.out.write(d)
             end
         end
 
