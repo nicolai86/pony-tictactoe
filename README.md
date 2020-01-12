@@ -18,6 +18,12 @@ TicTacToe starting...
 A [ , , ]
 B [ , , ]
 C [ , , ]
+
+A1
+   1 2 3
+A [o, , ]
+B [ , , ]
+C [ , , ]
 ```
 
 Players take turns and enter the coordinate where they want to place their marker, e.g.
