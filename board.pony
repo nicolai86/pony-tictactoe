@@ -3,18 +3,19 @@ use "collections"
 // CellState represents the possible states of a Board
 type CellState is (Mark | None)
 
+type Column is USize
+
 primitive A
-    fun idx(): USize => 0
+    fun idx(): Column => 0
 primitive B
-    fun idx(): USize => 1
+    fun idx(): Column => 1
 primitive C
-    fun idx(): USize => 2
+    fun idx(): Column => 2
 
 type Row is (A | B | C)
 
 // Address is a location inside the Board
-type Address is (Row, USize)
-
+type Address is (Row, Column)
 
 class Board
     let _env: Env
